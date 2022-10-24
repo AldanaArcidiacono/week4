@@ -3,8 +3,15 @@ import { Counter } from "./counter";
 import { CounterComplex } from "./counter.complex";
 import style from "./sample.module.css";
 
-export function Sample() {
-    const title: string = "Hola Mundo";
+interface IProps {
+    user: string;
+    age: number;
+}
+
+// export function Sample(props: IProps) {
+//     const title: string = `Hola ${props.user ? props.user : "mundo"}`;
+export function Sample({ user, age }: IProps) {
+    const title: string = `Hola ${user ? user + age : "mundo"}`;
     return (
         <>
             <div>
