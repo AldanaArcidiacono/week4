@@ -2,12 +2,17 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Sample } from "./components/sample";
+import { Foo } from "./components/foo";
 
 function App() {
+    const mainData: Array<number> = [];
+    const otherData: Array<string> = ["Pepe", "Juan", "Elena"];
     return (
         <div className="App">
             <header className="App-header">
-                <Sample user="Pepe" age={33}></Sample>
+                <Sample user="Pepe" age={33} data={mainData}>
+                    <Foo names={otherData}></Foo>
+                </Sample>
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
                     Edit <code>src/App.tsx</code> and save to reload.
