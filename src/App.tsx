@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Sample } from "./components/sample";
 import { Foo } from "./components/foo";
+import { Formulario } from "./components/formulario/formulario";
 
 function App() {
     const mainData: Array<number> = [];
@@ -26,6 +27,7 @@ function App() {
                     Learn React
                 </a>
             </header>
+            <Formulario></Formulario>
         </div>
     );
 }
