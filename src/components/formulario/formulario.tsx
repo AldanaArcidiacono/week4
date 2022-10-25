@@ -15,6 +15,9 @@ export function Formulario() {
 
     const handleSubmit = (ev: SyntheticEvent) => {
         ev.preventDefault();
+        // en el obj form estan los datos, para presentarle a los usuarios
+        // habria que imprimir en pantalla el obj
+        // Enseñar el estado del form
     };
 
     const handleForm = (ev: SyntheticEvent) => {
